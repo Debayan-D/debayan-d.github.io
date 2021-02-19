@@ -1,0 +1,420 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+:root {
+  --primary-color: #35424a;
+  --secondary-color: #1c3fa8;
+  --dark-color: #002240;
+  --light-color: #f4f4f4;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+h1,
+h2 {
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 10px 0;
+}
+
+p {
+  margin: 10px 0;
+}
+
+img {
+  width: 100%;
+}
+
+code,
+pre {
+  background: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+.hidden {
+  visibility: hidden;
+  height: 0;
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.logo {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.navbar ul {
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.1);
+  display: flex;
+}
+
+.navbar a {
+  color: #fff;
+  padding: 10px;
+  margin: 0 5px;
+}
+
+.navbar a:hover {
+  border-bottom: 2px #fff solid;
+}
+
+.navbar .flex {
+  justify-content: space-between;
+}
+
+/* Showcase */
+.showcase {
+  padding: 10px;
+  height: 400px;
+  background-color: var(--primary-color);
+  color: #fff;
+  position: relative;
+}
+
+.showcase h1 {
+  font-size: 40px;
+}
+
+.showcase p {
+  margin: 20px 0;
+}
+
+.showcase .grid {
+  margin: auto;
+  overflow: visible;
+  grid-template-columns: 55% auto;
+  gap: 30px;
+}
+
+.showcase-text {
+  animation: slideInFromLeft 1s ease-in;
+}
+
+
+
+.showcase-form {
+  position: relative;
+  top: 60px;
+  height: 350px;
+  width: 350px;
+  padding: 10px;
+  z-index: 100;
+  justify-self: flex-end;
+  animation: slideInFromRight 1s ease-in;
+}
+
+.showcase-form iframe {
+  height:300px;
+}
+
+.showcase::before,
+.showcase::after {
+  content: '';
+  position: absolute;
+  height: 100px;
+  bottom: -70px;
+  right: 0;
+  left: 0;
+  background: #fff;
+  transform: skewY(-3deg);
+  -webkit-transform: skewY(-3deg);
+  -moz-transform: skewY(-3deg);
+  -ms-transform: skewY(-3deg);
+}
+
+/* Stats */
+.stats {
+  padding-top: 100px;
+  animation: slideInFromBottom 1s ease-in;
+}
+
+.stats-heading {
+  max-width: 500px;
+  margin: auto;
+}
+
+.stats .grid h3 {
+  font-size: 35px;
+}
+
+.stats .grid p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Projects */
+.project-title {
+  font-size: 25px;
+}
+
+/* Cli */
+.cli .grid {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.cli .grid > *:first-child {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+}
+
+/* Cloud */
+.cloud .grid {
+  grid-template-columns: 4fr 3fr;
+}
+
+/* Languages */
+
+.languages .flex {
+  flex-wrap: wrap;
+}
+
+.card > img {
+  width: 82px;
+  height: 80px;
+}
+
+.languages .card {
+  text-align: center;
+  margin: 18px 10px 40px;
+  transition: transform 0.2s ease-in;
+}
+
+.languages .card h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.languages .card:hover {
+  transform: translateY(-15px);
+}
+
+/* project */
+
+.project-head .container {
+  animation: slideInFromTop 1s ease-in;
+}
+.project-head img,
+.contact-head img {
+  width: 200px;
+  justify-self: flex-end;
+}
+
+.project-main .card > i {
+  margin-right: 20px;
+}
+
+.project-main .grid {
+  padding: 30px;
+}
+
+.project-main .grid > *:first-child {
+  grid-column: 1 / span 3;
+  animation: slideInFromLeft 1s ease-in;
+}
+
+.project-main .grid > *:nth-child(2) {
+  grid-column: 1 / span 3;
+  animation: slideInFromRight 1s ease-in;
+}
+
+/* docs */
+.contact-main h3 {
+  margin: 20px 0;
+}
+
+
+.contact-head .container{
+  animation: slideInFromTop 1s ease-in;
+}
+
+.contact-card > iframe {
+  height: 600px;
+  width: 50%;
+}
+
+.contact-main{
+  padding: 20px;
+}
+
+.contact-card {
+    width: 100%;
+    animation: slideInFromBottom 1s ease-in;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    overflow: hidden;
+    text-align: center;
+}
+
+/* Footer */
+
+.footer {
+  width: 100%;
+  position: absolute;
+}
+
+.footer .social a {
+  margin: 0 10px;
+}
+
+/* Animations */
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Tablets and under */
+@media (max-width: 768px) {
+  .grid,
+  .showcase .grid,
+  .stats .grid,
+  .cli .grid,
+  .cloud .grid,
+  .project-main .grid,
+  .docs-main .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .navbar {
+    overflow: hidden;
+    height: 100%;
+  }
+
+  .flex {
+    flex-direction: column;
+  }
+
+  .navbar ul {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .showcase {
+    height: auto;
+  }
+
+  .showcase-text {
+    text-align: center;
+    margin-top: 40px;
+    animation: slideInFromTop 1s ease-in;
+  }
+
+  .showcase-form {
+    justify-self: center;
+    margin: auto;
+    animation: slideInFromBottom 1s ease-in;
+  }
+
+  .cli .grid > *:first-child {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .project-head,
+  .project-sub-head,
+  .docs-head {
+    text-align: center;
+  }
+
+  .project-head img,
+  .project-sub-head img,
+  .docs-head img {
+    justify-self: center;
+  }
+
+  .project-main .grid > *:first-child,
+  .project-main .grid > *:nth-child(2) {
+    grid-column: 1;
+  }
+
+  .contact-card > iframe {
+    height: 600px;
+    width: 100%;
+  }
+
+
+  .footer {
+    padding: 90px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 500px) {
+  .navbar {
+    overflow: hidden;
+    height: 100%;
+  }
+
+  .flex {
+    flex-direction: column;
+  }
+
+  .navbar ul {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .showcase-form {
+    width: 300px;
+  }
+}
