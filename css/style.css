@@ -235,6 +235,11 @@ img {
   animation: slideInFromRight 1s ease-in;
 }
 
+.project-main .grid > *:nth-child(3) {
+  grid-column: 1 / span 3;
+  animation: slideInFromLeft 1s ease-in;
+}
+
 /* docs */
 .contact-main h3 {
   margin: 20px 0;
