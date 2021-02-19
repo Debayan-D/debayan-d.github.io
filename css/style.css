@@ -7,6 +7,7 @@
   --light-color: #f4f4f4;
 }
 
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -41,13 +42,6 @@ p {
 
 img {
   width: 100%;
-}
-
-code,
-pre {
-  background: #333;
-  color: #fff;
-  padding: 10px;
 }
 
 .hidden {
@@ -378,7 +372,7 @@ pre {
 
   .project-head img,
   .project-sub-head img,
-  .docs-head img {
+  .contact-head img {
     justify-self: center;
   }
 
@@ -392,9 +386,8 @@ pre {
     width: 100%;
   }
 
-
-  .footer {
-    padding: 90px;
+  footer {
+    flex-direction: row;
   }
 }
 
@@ -416,5 +409,8 @@ pre {
 
   .showcase-form {
     width: 300px;
+  }
+  footer {
+    flex-direction: row;
   }
 }
