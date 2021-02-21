@@ -17,7 +17,7 @@
 			<key>metadata</key>
 			<dict>
 				<key>bundle-identifier</key>
-				<string>ddey123.ToDoApp</string>
+				<string>com.ddey123.ToDoApp</string>
 				<key>bundle-version</key>
 				<string>v2</string>
 				<key>kind</key>
