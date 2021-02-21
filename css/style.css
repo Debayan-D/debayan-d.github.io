@@ -240,6 +240,11 @@ img {
   animation: slideInFromLeft 1s ease-in;
 }
 
+.project-main .grid > *:nth-child(4) {
+  grid-column: 1 / span 3;
+  animation: slideInFromRight 1s ease-in;
+}
+
 /* docs */
 .contact-main h3 {
   margin: 20px 0;
@@ -383,7 +388,8 @@ img {
 
   .project-main .grid > *:first-child,
   .project-main .grid > *:nth-child(2),
-  .project-main .grid > *:nth-child(3) {
+  .project-main .grid > *:nth-child(3),
+  .project-main .grid > *:nth-child(4) {
     grid-column: 1;
   }
 
