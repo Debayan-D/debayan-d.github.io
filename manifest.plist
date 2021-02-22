@@ -11,19 +11,19 @@
 					<key>kind</key>
 					<string>software-package</string>
 					<key>url</key>
-					<string>http://ddey123.github.io/releases/download/v2/ToDoApp.ipa</string>
+					<string>http://ddey123.github.io/releases/download/v2/MyToDoList.ipa</string>
 				</dict>
 			</array>
 			<key>metadata</key>
 			<dict>
 				<key>bundle-identifier</key>
-				<string>com.ddey123.ToDoApp</string>
+				<string>com.ddey123.MyToDoList</string>
 				<key>bundle-version</key>
 				<string>v2</string>
 				<key>kind</key>
 				<string>software</string>
 				<key>title</key>
-				<string>ToDoApp</string>
+				<string>MyToDoList</string>
 			</dict>
 		</dict>
 	</array>
