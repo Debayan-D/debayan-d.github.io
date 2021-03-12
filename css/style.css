@@ -7,6 +7,11 @@
   --light-color: #f4f4f4;
 }
 
+@font-face {
+  font-family: Chocolate;
+  src: url('./Painting_With_Chocolate.ttf') format("truetype");
+}
+
 .loader {
     position: fixed;
     z-index: 100;
@@ -83,9 +88,11 @@ img {
 
 .logo {
   background-color: rgba(0, 0, 0, 0.1);
+  font-family: Chocolate;
 }
 
 .navbar ul {
+  font-family: Chocolate;
   padding: 10px;
   background-color: rgba(0, 0, 0, 0.1);
   display: flex;
@@ -116,6 +123,7 @@ img {
 
 .showcase h1 {
   font-size: 40px;
+  font-family: Chocolate;
 }
 
 .showcase p {
@@ -134,6 +142,7 @@ img {
 }
 
 .showcase-form {
+  font-family: Chocolate;
   top: 60px;
   position: relative;
   height: 350px;
@@ -169,12 +178,22 @@ img {
 }
 
 .stats-heading {
+  font-family: Chocolate;
   max-width: 500px;
   margin: auto;
 }
 
 .stats .grid h3 {
+  font-family: Chocolate;
   font-size: 35px;
+}
+
+.stats i{
+  transition: transform 0.2s ease-in;
+}
+
+.stats i:hover {
+  transform: translateY(-15px);
 }
 
 .stats .grid p {
@@ -183,8 +202,17 @@ img {
 }
 
 /* Projects */
+
+.project-head .xl {
+  font-family: Chocolate;
+}
 .project-title {
+  font-family: Chocolate;
   font-size: 25px;
+}
+
+.project-main i:hover {
+  transform: translateY(-15px);
 }
 
 /* Cli */
@@ -203,8 +231,11 @@ img {
   grid-template-columns: 4fr 3fr;
 }
 
-/* Languages */
 
+.lg {
+  font-family: Chocolate;
+}
+/* Languages */
 .languages .flex {
   flex-wrap: wrap;
 }
@@ -221,6 +252,7 @@ img {
 }
 
 .languages .card h4 {
+  font-family: Chocolate;
   font-size: 20px;
   margin-bottom: 10px;
 }
@@ -244,6 +276,14 @@ img {
   margin-right: 20px;
 }
 
+.project-main i {
+  transition: transform 0.2s ease-in;
+}
+
+.project-main i:hover: {
+  transition: translateY(-15px);
+}
+
 .project-main .grid {
   padding: 30px;
 }
@@ -263,12 +303,15 @@ img {
   animation: slideInFromLeft 1s ease-in;
 }
 
-.project-main .grid > *:nth-child(4) {
-  grid-column: 1 / span 3;
-  animation: slideInFromRight 1s ease-in;
+/* docs */
+.contact-head .xl{
+  font-family: Chocolate;
 }
 
-/* docs */
+.contact-main{
+  font-family: Chocolate;
+}
+
 .contact-main h3 {
   margin: 20px 0;
 }
@@ -298,13 +341,14 @@ img {
 }
 
 /* Footer */
-
 .footer {
+  font-family: Chocolate;
   width: 100%;
   position: absolute;
 }
 
 .footer .social a {
+  transform: translateY(-15px);
   margin: 0 10px;
 }
 
