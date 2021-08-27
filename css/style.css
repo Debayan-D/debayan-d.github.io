@@ -1,15 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@100&display=swap');
 :root {
   --primary-color: #35424a;
   --secondary-color: #1c3fa8;
   --dark-color: #002240;
   --light-color: #f4f4f4;
-}
-
-@font-face {
-  font-family: Chocolate;
-  src: url('./Painting_With_Chocolate.ttf') format("truetype");
 }
 
 .loader {
@@ -49,7 +43,7 @@
 }
 
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;  
   color: #333;
   line-height: 1.6;
 }
@@ -88,11 +82,13 @@ img {
 
 .logo {
   background-color: rgba(0, 0, 0, 0.1);
-  font-family: Chocolate;
+  width: 10%;
+  height: 25%;
+  border-radius: 50%;
 }
 
 .navbar ul {
-  font-family: Chocolate;
+    font-family: 'Open Sans', sans-serif;  
   padding: 10px;
   background-color: rgba(0, 0, 0, 0.1);
   display: flex;
@@ -123,7 +119,7 @@ img {
 
 .showcase h1 {
   font-size: 40px;
-  font-family: Chocolate;
+    font-family: 'Open Sans', sans-serif;  
 }
 
 .showcase p {
@@ -142,7 +138,7 @@ img {
 }
 
 .showcase-form {
-  font-family: Chocolate;
+    font-family: 'Open Sans', sans-serif;  
   top: 60px;
   position: relative;
   height: 350px;
@@ -178,13 +174,13 @@ img {
 }
 
 .stats-heading {
-  font-family: Chocolate;
+    font-family: 'Open Sans', sans-serif;  
   max-width: 500px;
   margin: auto;
 }
 
 .stats .grid h3 {
-  font-family: Chocolate;
+    font-family: 'Open Sans', sans-serif;  
   font-size: 35px;
 }
 
@@ -204,10 +200,10 @@ img {
 /* Projects */
 
 .project-head .xl {
-  font-family: Chocolate;
+    font-family: 'Open Sans', sans-serif;  
 }
 .project-title {
-  font-family: Chocolate;
+    font-family: 'Open Sans', sans-serif;  
   font-size: 25px;
 }
 
@@ -233,7 +229,7 @@ img {
 
 
 .lg {
-  font-family: Chocolate;
+    font-family: 'Open Sans', sans-serif;  
 }
 /* Languages */
 .languages .flex {
@@ -252,7 +248,7 @@ img {
 }
 
 .languages .card h4 {
-  font-family: Chocolate;
+    font-family: 'Open Sans', sans-serif;  
   font-size: 20px;
   margin-bottom: 10px;
 }
@@ -280,7 +276,7 @@ img {
   transition: transform 0.2s ease-in;
 }
 
-.project-main i:hover: {
+.project-main i:hover {
   transition: translateY(-15px);
 }
 
@@ -302,14 +298,18 @@ img {
   grid-column: 1 / span 3;
   animation: slideInFromLeft 1s ease-in;
 }
+.project-main .grid > *:nth-child(4) {
+  grid-column: 1 / span 3;
+  animation: slideInFromRight 1s ease-in;
+}
 
 /* docs */
 .contact-head .xl{
-  font-family: Chocolate;
+    font-family: 'Open Sans', sans-serif;  
 }
 
 .contact-main{
-  font-family: Chocolate;
+    font-family: 'Open Sans', sans-serif;  
 }
 
 .contact-main h3 {
@@ -342,7 +342,7 @@ img {
 
 /* Footer */
 .footer {
-  font-family: Chocolate;
+    font-family: 'Open Sans', sans-serif;  
   width: 100%;
   position: absolute;
 }
